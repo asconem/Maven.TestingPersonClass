@@ -95,4 +95,74 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testConstructorWithNameAgeEyeColor() {
+        // Given
+        Integer expectedAge = 5;
+        String expectedName = "Leon";
+        String expectedEyeColor = "hazel";
+
+        // When
+        Person person = new Person(expectedName, expectedAge, expectedEyeColor);
+
+        // Then
+        Integer actualAge = person.getAge();
+        String actualName = person.getName();
+        String actualEyeColor = person.getEyeColor();
+
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedEyeColor, actualEyeColor);
+    }
+
+    @Test
+    public void testConstructorWithNameAgeEyeColorGender() {
+        // Given
+        Integer expectedAge = 5;
+        String expectedName = "Leon";
+        String expectedEyeColor = "hazel";
+        boolean expectedIsMale = true;
+
+        // When
+        Person person = new Person(expectedName, expectedAge, expectedEyeColor, expectedIsMale);
+
+        // Then
+        Integer actualAge = person.getAge();
+        String actualName = person.getName();
+        String actualEyeColor = person.getEyeColor();
+        boolean actualIsMale = person.getIsMale();
+
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedEyeColor, actualEyeColor);
+        Assert.assertEquals(expectedIsMale, actualIsMale);
+    }
+
+    @Test
+    public void testConstructorWithNameAgeEyeColorGenderHairColor() {
+        // Given
+        Integer expectedAge = 5;
+        String expectedName = "Leon";
+        String expectedEyeColor = "hazel";
+        boolean expectedIsMale = true;
+        String expectedHairColor = "brown";
+
+        // When
+        Person person = new Person(expectedName, expectedAge, expectedEyeColor, expectedIsMale, expectedHairColor);
+
+        // Then
+        Integer actualAge = person.getAge();
+        String actualName = person.getName();
+        String actualEyeColor = person.getEyeColor();
+        boolean actualIsMale = person.getIsMale();
+        String actualHairColor = person.getHairColor();
+
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedEyeColor, actualEyeColor);
+        Assert.assertEquals(expectedIsMale, actualIsMale);
+        Assert.assertEquals(expectedHairColor, actualHairColor);
+    }
+
 }
