@@ -86,14 +86,17 @@ public class Person {
     }
 
     public String getEyeColor() {
+
         return eyeColor;
     }
 
     public boolean getIsMale() {
+
         return isMale;
     }
 
     public String getHairColor() {
+
         return hairColor;
     }
 }

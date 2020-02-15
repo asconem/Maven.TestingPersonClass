@@ -161,7 +161,7 @@ public class TestPerson {
         Assert.assertEquals(expectedAge, actualAge);
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedEyeColor, actualEyeColor);
-        Assert.assertEquals(expectedIsMale, actualIsMale);
+        Assert.assertTrue(actualIsMale);
         Assert.assertEquals(expectedHairColor, actualHairColor);
     }
 
